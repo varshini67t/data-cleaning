@@ -45,6 +45,4 @@ df.head()
 
 df.info()
 
-df.isnull().sum()
-
 # OUPUT
