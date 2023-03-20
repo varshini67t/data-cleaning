@@ -48,7 +48,7 @@ df.info()
 #code 2
 
 import pandas as pd
-df=pd.read_csv("Data_set.csv")
+df=pd.read_csv("Loan_data.csv")
 printf(df)
 df.head(10)
 
