@@ -18,7 +18,7 @@ Remove the null values from the data
 
 ## STEP 4
 Save the Clean data to the file
-# CODE2
+# CODE
 import pandas as pd
 df=pd.read_csv("Data_set.csv")
 printf(df)
@@ -43,8 +43,7 @@ df['watchers']=df['watchers'].fillna(df['watchers'].median())
 df.head()
 
 df.info()
-
-#code 2
+# CODE
 
 import pandas as pd
 df=pd.read_csv("Loan_data.csv")
