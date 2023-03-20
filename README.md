@@ -45,6 +45,33 @@ df.head()
 
 df.info()
 
+#code 2
+
+import pandas as pd
+df=pd.read_csv("Data_set.csv")
+printf(df)
+df.head(10)
+
+df.info()
+
+df.isnull()
+
+df.isnull().sum()
+
+df['show_name']=['show_name'].fillna(df['aired_on'].mode()[0])
+df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
+df['original_network']=df['original_network'].fillna(df['aired_on'].mode()[0])
+df.head()
+
+df['rating']=df['rating'].fillna(df['rating'].mean())
+df['current_overall_rank']=df['current_overall_rank'].fillna(df['current_overall_rank'].mean())
+df.head()
+
+df['watchers']=df['watchers'].fillna(df['watchers'].median())
+df.head()
+
+df.info()
+
 # OUPUT
 ![img1](https://user-images.githubusercontent.com/107982953/226191154-08ba4f16-b6f7-43b7-b3f9-cc4e12fc7219.png)
 ![img2](https://user-images.githubusercontent.com/107982953/226191247-3f0c538e-bb22-44db-92ad-d8ddd8872267.png)
