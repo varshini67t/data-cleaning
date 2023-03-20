@@ -56,16 +56,16 @@ df.isnull()
 
 df.isnull().sum()
 
-df['show_name']=['show_name'].fillna(df['aired_on'].mode()[0])
-df['aired_on']=df['aired_on'].fillna(df['aired_on'].mode()[0])
-df['original_network']=df['original_network'].fillna(df['aired_on'].mode()[0])
+df['Loan_ID']=['Loan_ID'].fillna(df['Education'].mode()[0])
+df['Education']=df['Education'].fillna(df['Education'].mode()[0])
+df['ApplicantIncome']=df['ApplicantIncome'].fillna(df['Education'].mode()[0])
 df.head()
 
-df['rating']=df['rating'].fillna(df['rating'].mean())
-df['current_overall_rank']=df['current_overall_rank'].fillna(df['current_overall_rank'].mean())
+df['CoapplicantIncome']=df['CoapplicantIncome'].fillna(df['CoapplicantIncome'].mean())
+df['Credit_History']=df['Credit_History'].fillna(df['Credit_History'].mean())
 df.head()
 
-df['watchers']=df['watchers'].fillna(df['watchers'].median())
+df['LoanAmount']=df['LoanAmount'].fillna(df['LoadAmount'].median())
 df.head()
 
 df.info()
